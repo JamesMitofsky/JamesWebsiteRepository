@@ -1,5 +1,5 @@
 body {
-	background-color: hsla(187, 50%, 56%, 1);
+	background-color: hsla(13, 50%, 39%, 1);
 	margin: 0;
 	padding: 0;
 	font-family: Verdana, sans-serif;
@@ -27,7 +27,7 @@ ul {
 	position: fixed;
 	top:0;
 	padding-bottom: 2px;
-	background-color: hsla(725, 62%, 25%, 1);
+	background-color: #27556C;
 	width: 100%;
 	margin-bottom: 20px;
 	z-index: 100;

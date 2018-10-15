@@ -1,4 +1,5 @@
-/*current palette: http://paletton.com/#uid=33s0u0kllll9G-pfwrprafhyZ9d*/
+/*triad palette: http://paletton.com/#uid=33s0u0kllll9G-pfwrprafhyZ9d
+  tetrad palette: http://paletton.com/#uid=73s0u0klvlr9V-ifPrnrsfhzH9b*/
 
 body {
 	background-color: hsla(13, 50%, 39%, 1);
@@ -17,7 +18,6 @@ h1 {
 }
 
 h2 {
-	color: #d1633c;
 	font-size: 1em;
 }
 

@@ -38,22 +38,22 @@ ul {
 }
 
 @media screen and (max-width: 564px) {
-	h1.domain_name {
+	h1.domain-name {
 		line-height: 32px;
 	}
 }
 
-.header_container {
+.header-container {
 	max-width: 70%;
 	margin: 0 15%;
 }
-.domain_info {
+.domain-info {
 	color: #ffffff;
 	text-decoration: none;
 	margin: 3px;
 }
 
-.domain_name {
+.domain-name {
 	font-family: serif;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -71,11 +71,11 @@ ul {
 	top: 141px;
 }
 
-.paragraph_block.my_info {
+.paragraph-block.my-info {
     background-color: hsla(43, 59%, 62%, 1);
 }
 
-.paragraph_block{
+.paragraph-block {
 	padding: 15px;
 	overflow: hidden;
 	background-color: #FAFAFA;

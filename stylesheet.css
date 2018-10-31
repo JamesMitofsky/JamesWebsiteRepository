@@ -37,6 +37,12 @@ ul {
 	text-align: center;
 }
 
+@media screen and (max-width: 564px) {
+	h1.domain_name {
+		line-height: 32px;
+	}
+}
+
 .header_container {
 	max-width: 70%;
 	margin: 0 15%;

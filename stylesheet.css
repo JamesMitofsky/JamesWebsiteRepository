@@ -74,14 +74,11 @@ ul {
 .paragraph-block.myinfo {
 	background-color: hsla(43, 59%, 62%, 1);
 	text-align: center;
-	padding: 15px 3px;
+	padding: 15px 0px;
 }
 
 .myinfo-link {
-}
-
-.right-margin {
-	margin: 3px;
+	white-space: nowrap;
 }
 
 .paragraph-block {

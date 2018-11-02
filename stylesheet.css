@@ -44,7 +44,6 @@ ul {
 	div.content {
 		width: 86%;
 		margin: 0 7%;
-		transition: .2s;
 	}
 }
 
@@ -74,7 +73,7 @@ ul {
 	margin: 0 15%;
 	margin-bottom: 15px;
 	top: 141px;
-	transition: .2s;
+	transition: .2s ease;
 }
 
 .paragraph-block.myinfo {

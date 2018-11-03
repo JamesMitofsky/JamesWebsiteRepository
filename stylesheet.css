@@ -28,27 +28,24 @@ ul {
 .header {
     position: fixed;
     top: 0;
-    background-color: #27556C;
-    width: 100%;
-    z-index: 100;
+	width: 100%;
 	text-align: center;
-    height: 96px;
+	z-index: 100;
+	background-color: #27556C;
 }
 
-/*Still facing breakpoint issue*/
-@media screen and (max-width: 575px) {
-	h1.domain-name {
-		line-height: 32px;
-	}
+/*Changes content width and margines*/
+@media screen and (max-width: 551px) {
 	div.content {
 		width: 86%;
 		margin: 0 7%;
+		top: 87px;
 	}
 }
 
 .header-container {
 	max-width: 70%;
-	margin: 0 15%;
+	margin: 12px 15%;
 }
 .domain-info {
 	color: #ffffff;
@@ -59,10 +56,11 @@ ul {
 	font-family: serif;
     font-weight: normal;
     text-transform: uppercase;
-    border-bottom: 2px solid #757575;
+	border-bottom: 2px solid #757575;
+	vertical-align: middle;
+	display: table-cell;
     margin: 14px;
     font-family: 'IBM Plex Serif', serif;
-    line-height: 57px;
 }
 
 .content {
@@ -70,8 +68,8 @@ ul {
 	position: relative;
 	margin: 0 15%;
 	margin-bottom: 15px;
-	top: 95px;
-	transition: .2s ease;
+	top: 55px;
+	transition: margin .2s ease;
 }
 
 .paragraph-block.myinfo {

@@ -32,21 +32,32 @@ ul {
 	text-align: center;
 	z-index: 100;
 	background-color: #27556C;
+	height: 80px;
 }
 
+.aligner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .aligner-item-top {
+	align-self: flex-start;
+  }
+  
+  .aligner-item-bottom {
+	align-self: flex-end;
+  }
+
+  
 /*Changes content width and margines*/
 @media screen and (max-width: 551px) {
 	div.content {
 		width: 86%;
 		margin: 0 7%;
-		top: 87px;
 	}
 }
 
-.header-container {
-	max-width: 70%;
-	margin: 12px 15%;
-}
 .domain-info {
 	color: #ffffff;
 	text-decoration: none;
@@ -57,7 +68,6 @@ ul {
     font-weight: normal;
     text-transform: uppercase;
 	border-bottom: 2px solid #757575;
-	vertical-align: middle;
     margin: 14px;
     font-family: 'IBM Plex Serif', serif;
 }
@@ -67,7 +77,7 @@ ul {
 	position: relative;
 	margin: 0 15%;
 	margin-bottom: 15px;
-	top: 55px;
+	top: 77px;
 	transition: margin .2s ease;
 }
 

@@ -58,7 +58,6 @@ ul {
     text-transform: uppercase;
 	border-bottom: 2px solid #757575;
 	vertical-align: middle;
-	display: table-cell;
     margin: 14px;
     font-family: 'IBM Plex Serif', serif;
 }

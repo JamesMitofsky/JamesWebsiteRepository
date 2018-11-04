@@ -78,7 +78,8 @@ ul {
 	margin: 0 15%;
 	margin-bottom: 15px;
 	top: 77px;
-	transition: margin .2s ease;
+	transition-property: margin;
+    transition-duration: 2s ease;
 }
 
 .paragraph-block.myinfo {

@@ -50,7 +50,7 @@ ul {
   }
 
   
-/*Changes content width and margines*/
+/*Changes content width and margins*/
 @media screen and (max-width: 551px) {
 	div.content {
 		width: 86%;

@@ -56,8 +56,20 @@ ul {
 		width: 86%;
 		margin: 0 7%;
 	}
+}
+
+@media screen and (max-width: 450px) {
 	.domain-name {
 		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 386px) {
+	.header {
+		position: relative;
+	}
+	div.content {
+		top: 0px;
 	}
 }
 
@@ -82,7 +94,7 @@ ul {
 	margin: 0 15%;
 	margin-bottom: 15px;
 	top: 77px;
-	transition: all .5s ease;
+	transition: width .5s ease;
 }
 
 .paragraph-block.myinfo {

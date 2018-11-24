@@ -45,7 +45,7 @@ ul {
 .myinfo-link {
 	display: inline-block;
 	margin: 2px 0;
-	background-color: #27556C;
+	background-color: hsla(200, 75%, 46%, 1);
 	color: white;
 	padding: 5px;
 	border-radius: 3px;
@@ -54,7 +54,7 @@ ul {
 }
 
 .myinfo-link:hover {
-    background-color: hsla(200, 47%, 25%, 1);
+    background-color: hsla(200, 75%, 40%, 1);
     color: white;
 }
 

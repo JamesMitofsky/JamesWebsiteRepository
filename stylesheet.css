@@ -40,15 +40,27 @@ ul {
 	align-items: center;
 	justify-content: center;
   }
-  
-  .aligner-item-top {
-	align-self: flex-start;
-  }
-  
-  .aligner-item-bottom {
-	align-self: flex-end;
-  }
 
+
+.myinfo-link {
+	display: inline-block;
+	margin: 2px 0;
+	background-color: #27556C;
+	color: white;
+	padding: 5px;
+	border-radius: 3px;
+	box-shadow: 1.3px 1.3px 3px 0px hsla(200, 47%, 37%, 1);
+	text-decoration: none;
+}
+
+.myinfo-link:hover {
+    background-color: hsla(200, 47%, 25%, 1);
+    color: white;
+}
+
+.myinfo-link:active {
+    box-shadow: inset 1px 1px 9px 0 hsla(200, 47%, 23%, 1);
+}
   
 /*Changes content width and margins*/
 @media screen and (max-width: 551px) {
@@ -100,11 +112,7 @@ ul {
 .paragraph-block.myinfo {
 	background-color: hsla(43, 59%, 62%, 1);
 	text-align: center;
-	padding: 15px 0px;
-}
-
-.myinfo-link {
-	white-space: nowrap;
+	padding: 8px 0px;
 }
 
 .paragraph-block {

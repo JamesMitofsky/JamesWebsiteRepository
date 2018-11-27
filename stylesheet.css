@@ -1,8 +1,8 @@
 /*triad palette: http://paletton.com/#uid=33s0u0kllll9G-pfwrprafhyZ9d
   tetrad palette: http://paletton.com/#uid=73s0u0klvlr9V-ifPrnrsfhzH9b*/
 
-body {
-	background-color: hsla(13, 50%, 39%, 1);
+  body {
+	background-color: hsla(185, 117%, 31%, 1);
 	margin: 0;
 	padding: 0;
 	font-family: Verdana, sans-serif;
@@ -28,11 +28,12 @@ ul {
 .header {
     position: fixed;
     top: 0;
-	width: 100%;
-	text-align: center;
-	z-index: 100;
-	background-color: #27556C;
-	height: 80px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    background-color: #383838;
+    height: 80px;
+    color: black;
 }
 
 .aligner {
@@ -45,21 +46,21 @@ ul {
 .myinfo-link {
 	display: inline-block;
 	margin: 2px 0;
-	background-color: hsla(200, 75%, 46%, 1);
-	color: white;
+	background-color: hsla(52, 100%, 39%, 1);
+	color: black;
 	padding: 5px;
 	border-radius: 3px;
-	box-shadow: 1.3px 1.3px 3px 0px hsla(200, 47%, 37%, 1);
+	box-shadow: 1.6px 1.6px 3px 0px hsla(52, 100%, 16%, 1);
 	text-decoration: none;
 }
 
 .myinfo-link:hover {
-    background-color: hsla(200, 75%, 40%, 1);
-    color: white;
+    background-color: hsla(52, 100%, 43%, 1);
+    color: black;
 }
 
 .myinfo-link:active {
-    box-shadow: inset 1px 1px 9px 0 hsla(200, 47%, 23%, 1);
+    box-shadow: inset 1px 1px 5px 0.5px hsla(55, 47%, 23%, 1);
 }
   
 /*Changes content width and margins*/
@@ -67,6 +68,9 @@ ul {
 	div.content {
 		width: 86%;
 		margin: 0 7%;
+	}
+	.domain-name {
+		transition: font-size .5s ease;
 	}
 }
 
@@ -92,12 +96,12 @@ ul {
 
 .domain-name {
 	font-family: serif;
-    font-weight: normal;
-    text-transform: uppercase;
+	font-weight: normal;
+	text-transform: uppercase;
 	border-bottom: 2px solid #757575;
-    margin: 14px;
+	margin: 14px;
 	font-family: 'IBM Plex Serif', serif;
-	transition: font-size .5s ease;
+	color: hsl(0, 0%, 100%);
 }
 
 .content {
@@ -110,9 +114,11 @@ ul {
 }
 
 .paragraph-block.myinfo {
-	background-color: hsla(43, 59%, 62%, 1);
+	background-color: #747474;
 	text-align: center;
 	padding: 8px 0px;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .paragraph-block {
@@ -120,6 +126,6 @@ ul {
 	overflow: hidden;
 	background-color: #FAFAFA;
 	margin: 16px 0px;
-	box-shadow: 1px 1px 1px 0px #828282;
+	/* box-shadow: 1px 1px 1px 0px #828282; */
 	border-radius: 2px;
 }

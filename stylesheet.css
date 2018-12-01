@@ -2,7 +2,7 @@
   tetrad palette: http://paletton.com/#uid=73s0u0klvlr9V-ifPrnrsfhzH9b*/
 
   body {
-	background-color: hsla(185, 117%, 31%, 1);
+	background-color: hsl(0, 0%, 66%);
 	margin: 0;
 	padding: 0;
 	font-family: Verdana, sans-serif;
@@ -33,7 +33,7 @@ ul {
     z-index: 100;
     background-color: #383838;
     height: 80px;
-    color: black;
+    color: white;
 }
 
 .aligner {
@@ -45,17 +45,17 @@ ul {
 
 .myinfo-link {
 	display: inline-block;
-	margin: 2px 0;
-	background-color: hsla(52, 100%, 39%, 1);
+	margin: 0 4px;
+	background-color: hsl(38, 100%, 46%);
 	color: black;
-	padding: 5px;
+	padding: 5px 15px;
 	border-radius: 3px;
 	box-shadow: 1.6px 1.6px 3px 0px hsla(52, 100%, 16%, 1);
 	text-decoration: none;
 }
 
 .myinfo-link:hover {
-    background-color: hsla(52, 100%, 43%, 1);
+    background-color: hsl(38, 100%, 50%);
     color: black;
 }
 
@@ -114,7 +114,6 @@ ul {
 }
 
 .paragraph-block.myinfo {
-	background-color: #747474;
 	text-align: center;
 	padding: 8px 0px;
 	display: flex;
@@ -122,10 +121,24 @@ ul {
 }
 
 .paragraph-block {
-	padding: 15px;
-	overflow: hidden;
-	background-color: #FAFAFA;
+	background-color: white;
 	margin: 16px 0px;
-	/* box-shadow: 1px 1px 1px 0px #828282; */
-	border-radius: 2px;
+	box-shadow: 1px 1.5px 1px 0.5px #797979
+	border-radius: 4px;
+}
+
+.website-name {
+	background-color: hsla(30, 77%, 88%, 1);
+	padding: 10px;
+	font-weight: bold;
+}
+
+.website-info {
+	padding: 10px;
+}
+
+/* Quick styles */
+
+.bold {
+	font-weight: bold;
 }

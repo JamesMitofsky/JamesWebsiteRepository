@@ -2,7 +2,7 @@
   tetrad palette: http://paletton.com/#uid=73s0u0klvlr9V-ifPrnrsfhzH9b*/
 
   body {
-	background-color: hsl(0, 0%, 66%);
+	background-color: hsla(0, 0%, 97%, 1);
 	margin: 0;
 	padding: 0;
 	font-family: Verdana, sans-serif;
@@ -112,21 +112,22 @@ ul {
 	position: relative;
 	margin: 0 15%;
 	margin-bottom: 15px;
-	top: 77px;
+	top: 91px;
 	transition: width .5s ease;
 }
 
-.paragraph-block.myinfo {
+.myinfo {
 	text-align: center;
-	padding: 8px 0px;
-	display: flex;
-	justify-content: space-evenly;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 .paragraph-block {
 	background-color: white;
 	margin: 16px 0px;
-	box-shadow: 1px 1.5px 1px 0.5px #797979
+	box-shadow: 1px 1.5px 1px 0.5px #797979;
 	border-radius: 4px;
 }
 

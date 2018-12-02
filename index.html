@@ -14,204 +14,78 @@ a visible jump in text. Maybe try to make the font local.-->
 </head>
 
 <body>
-    
+
     <div class="header aligner">
         <a href="index.html" class="domain-info">
             <h1 class="domain-name aligner-item">James's Website Repository</h1>
         </a>
     </div>
     <div class="content">
-        <div class="paragraph-block myinfo">
+        <div class="myinfo">
             <a class="myinfo-link" href="https://github.com/13rilliant" target="_blank">My
                 Github Profile</a>
             <a class="myinfo-link" href="https://13rilliant.github.io/PracticeLog/index.html" target="_blank">Practice
                 Log</a>
         </div>
-        <!--
-        <div class="paragraph-block">
-            <div class="website-info">
-                <span class="website-name">
-                    <h1>Name: Practice Log</h1>
-                </span>
-                <span class="website-type">
-                    <h2>Type: Assignment Management</h2>
-                </span>
-                <span>
-                    <h2>Upload Date: 10/30/18</h2>
-                </span>
-                <span class="website-link"><a href="https://13rilliant.github.io/PracticeLog/index.html" target="_blank">
-                        <h2>Visit Website</h2>
-                    </a></span>
-            </div>
-            <div class="website-decription">
-                <p>Description: Created this website to document and organize smaller, usually assignment related
-                    projects.</p>
-            </div>
-        </div>
-        <div class="paragraph-block">
-            <div class="website-info">
-                <span class="website-name">
-                    <h1>Name: Fall Follies Falling</h1>
-                </span>
-                <span class="website-type">
-                    <h2>Type: Class Assignment - Midterm</h2>
-                </span>
-                <span>
-                    <h2>Upload Date: 10/22/18</h2>
-                </span>
-                <span class="website-link"><a href="https://13rilliant.github.io/FallFolliesFalling/index.html" target="_blank">
-                        <h2>Visit Website</h2>
-                    </a></span>
-            </div>
-            <div class="website-decription">
-                <p>Description: Here's my website which meets the mid-term requirements for the fall follies website.
-                    Worked on creating folding, card based elements.</p>
-            </div>
-        </div>
-        <div class="paragraph-block">
-            <div class="website-info">
-                <span class="website-name">
-                    <h1>Name: Werewolf Bar Mitzvah</h1>
-                </span>
-                <span class="website-type">
-                    <h2>Type: Class Assignment/Personal</h2>
-                </span>
-                <span>
-                    <h2>Upload Date: 10/22/18</h2>
-                </span>
-                <span class="website-link"><a href="https://13rilliant.github.io/WerewolfBarMitzvah/index.html" target="_blank">
-                        <h2>Visit Website</h2>
-                    </a></span>
-            </div>
-            <div class="website-decription">
-                <p>Description: Albiet somewhat outside of the exam requirements, I built this dyanmically responsive
-                    website for my fall follies project.</p>
-            </div>
-        </div>
-        <div class="paragraph-block">
-            <div class="website-info">
-                <span class="website-name">
-                    <h1>Name: James Attempts to Explain Relative Linking</h1>
-                </span>
-                <span class="website-type">
-                    <h2>Type: People Helping People</h2>
-                </span>
-                <span>
-                    <h2>Upload Date: 10/20/18</h2>
-                </span>
-                <span class="website-link"><a href="https://13rilliant.github.io/JamesAttemptsToExplainLinks/RelativeLinkingExample/index.html"
-                        target="_blank">
-                        <h2>Visit Website</h2>
-                    </a></span>
-            </div>
-            <div class="website-decription">
-                <p>Description: Created this website to help explain how relative linking works in HTML.</p>
-            </div>
-        </div>
-        <div class="paragraph-block">
-            <div class="website-info">
-                <span class="website-name">
-                    <h1>Name: Jen's Kitchen</h1>
-                </span>
-                <span class="website-type">
-                    <h2>Type: Class Assignment</h2>
-                </span>
-                <span>
-                    <h2>Upload Date: 10/9/18</h2>
-                </span>
-                <span class="website-link"><a href="https://13rilliant.github.io/JensKitchen/index.html" target="_blank">
-                        <h2>Visit Website</h2>
-                    </a></span>
-            </div>
-            <div class="website-decription">
-                <p>Description: This website is for a small business just in the early start-up phase, created by a
-                    woman trying to break through
-                    the glass ceiling. Some people say it's a man's world, but others will know that great doom lies
-                    ahead for such
-                    oppressors. This website contains a home, recipe, and about page.</p>
-            </div>
-        </div>
-        <div class="paragraph-block">
-            <div class="website-info">
-                <span class="website-name">
-                    <h1>Name: Black Goose Bistro</h1>
-                </span>
-                <span class="website-type">
-                    <h2>Type: Class Assignment</h2>
-                </span>
-                <span>
-                    <h2>Upload Date: 9/28/18</h2>
-                </span>
-                <span class="website-link"><a href="https://13rilliant.github.io/BGB/index.html" target="_blank">
-                        <h2>Visit Website</h2>
-                    </a></span>
-            </div>
-            <div class="website-decription">
-                <p>Description: This website is for a restaurant. It contains a home, summer menu, about us, and
-                    contact page.</p>
-            </div>
-        </div>
-    </div>
--->
-    <div id="app">
-        <div v-for="proj in projects" class="paragraph-block">
-            <div class="website-name">{{proj.name}}</div>
-            <div class="website-info">
-                <div class="project-type"><span class="bold">Type: </span>{{proj.type}}</div>
-                <div><span class="bold">Upload Date: </span>{{proj.uploadDate}}</div>
-                <div class="link-box">
-                    <a class="website-link" :href="proj.projectLink" target="_blank">
-                        View {{proj.viewSite}}
-                    </a>
-                </div>
-                <div class="website-description">
-                    <span>Description: {{proj.description}}</span>
+        <div id="app">
+            <div v-for="proj in projects" class="paragraph-block">
+                <div class="website-name">{{proj.name}}</div>
+                <div class="website-info">
+                    <div class="project-type"><span class="bold">Type: </span>{{proj.type}}</div>
+                    <div><span class="bold">Upload Date: </span>{{proj.uploadDate}}</div>
+                    <div class="link-box">
+                        <a class="website-link" :href="proj.projectLink" target="_blank">
+                            View {{proj.viewSite}}
+                        </a>
+                    </div>
+                    <div class="website-description">
+                        <span>Description: {{proj.description}}</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                projects: [
-                    {
-                        name: "Practice Log",
-                        type: "Assignment Management",
-                        uploadDate: "10/30/18",
-                        viewSite: "Visit Website",
-                        projectLink: "https://13rilliant.github.io/PracticeLog/index.html",
-                        description: "This website was created to document and organize smaller, usually assignment related projects."
-                    },
-                    {
-                        name: "Fall Follies Falling",
-                        type: "Class Assignment - Midterm",
-                        uploadDate: "11/17/18",
-                        viewSite: "Visit Website",
-                        projectLink: "https://13rilliant.github.io/FallFolliesFalling/index.html",
-                        description: "Here's my website which meets the mid-term requirements for the fall follies website. In particular, I worked on creating folding, card based elements."
-                    },
-                    {
-                        name: "Werewolf Bar Mitzvah",
-                        type: "Class Assignment/Personal",
-                        uploadDate: "10/22/18",
-                        viewSite: "Visit Website",
-                        projectLink: "https://13rilliant.github.io/WerewolfBarMitzvah/index.html",
-                        description: "Albiet somewhat outside of the exam requirements, I built this dyanmically responsive website for my fall follies project."
-                    },
-                    {
-                        name: "James Attempts to Explain Relative Linking",
-                        type: "People Helping People",
-                        uploadDate: "10/20/18",
-                        viewSite: "Visit Website",
-                        projectLink: "https://13rilliant.github.io/JamesAttemptsToExplainLinks/RelativeLinkingExample/index.html",
-                        description: "Created this website to help explain how relative linking works in HTML."
-                    }
-                ]
-            }
-        })
-    </script>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    projects: [
+                        {
+                            name: "Practice Log",
+                            type: "Assignment Management",
+                            uploadDate: "10/30/18",
+                            viewSite: "Visit Website",
+                            projectLink: "https://13rilliant.github.io/PracticeLog/index.html",
+                            description: "This website was created to document and organize smaller, usually assignment related projects."
+                        },
+                        {
+                            name: "Fall Follies Falling",
+                            type: "Class Assignment - Midterm",
+                            uploadDate: "11/17/18",
+                            viewSite: "Visit Website",
+                            projectLink: "https://13rilliant.github.io/FallFolliesFalling/index.html",
+                            description: "Here's my website which meets the mid-term requirements for the fall follies website. In particular, I worked on creating folding, card based elements."
+                        },
+                        {
+                            name: "Werewolf Bar Mitzvah",
+                            type: "Class Assignment/Personal",
+                            uploadDate: "10/22/18",
+                            viewSite: "Visit Website",
+                            projectLink: "https://13rilliant.github.io/WerewolfBarMitzvah/index.html",
+                            description: "Albiet somewhat outside of the exam requirements, I built this dyanmically responsive website for my fall follies project."
+                        },
+                        {
+                            name: "James Attempts to Explain Relative Linking",
+                            type: "People Helping People",
+                            uploadDate: "10/20/18",
+                            viewSite: "Visit Website",
+                            projectLink: "https://13rilliant.github.io/JamesAttemptsToExplainLinks/RelativeLinkingExample/index.html",
+                            description: "Created this website to help explain how relative linking works in HTML."
+                        }
+                    ]
+                }
+            })
+        </script>
 </body>
 
 </html>

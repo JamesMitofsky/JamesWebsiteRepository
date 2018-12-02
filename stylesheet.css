@@ -46,17 +46,20 @@ ul {
 .myinfo-link {
 	display: inline-block;
 	margin: 0 4px;
-	background-color: hsl(38, 100%, 46%);
-	color: black;
+	background-color: rgb(0, 137, 179);
+	color: white;
 	padding: 5px 15px;
 	border-radius: 3px;
 	box-shadow: 1.6px 1.6px 3px 0px hsla(52, 100%, 16%, 1);
 	text-decoration: none;
+	transition: background-color .2s ease, color .2s ease;
+	border: 2px solid transparent;
 }
 
 .myinfo-link:hover {
-    background-color: hsl(38, 100%, 50%);
-    color: black;
+	border: 2px solid hsla(-166, 100%, 42%, 1);
+	background-color: rgb(195, 236, 250);
+	color: black;
 }
 
 .myinfo-link:active {
@@ -128,7 +131,7 @@ ul {
 }
 
 .website-name {
-	background-color: hsla(30, 77%, 88%, 1);
+	background-color: #cceaec;
 	padding: 10px;
 	font-weight: bold;
 }

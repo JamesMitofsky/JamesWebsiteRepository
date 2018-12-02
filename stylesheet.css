@@ -50,7 +50,7 @@ ul {
 	color: white;
 	padding: 5px 15px;
 	border-radius: 3px;
-	box-shadow: 1.6px 1.6px 3px 0px hsla(52, 100%, 16%, 1);
+	box-shadow: 1.6px 1.6px 3px 0px hsl(197, 100%, 16%);
 	text-decoration: none;
 	transition: background-color .2s ease, color .2s ease;
 	border: 2px solid transparent;
@@ -112,13 +112,12 @@ ul {
 	position: relative;
 	margin: 0 15%;
 	margin-bottom: 15px;
-	top: 91px;
+	top: 96px;
 	transition: width .5s ease;
 }
 
 .myinfo {
 	text-align: center;
-    padding: 5px 0px;
     display: flex;
     justify-content: space-evenly;
 

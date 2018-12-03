@@ -68,47 +68,6 @@ ul {
 .myinfo-link:active {
     box-shadow: inset 1px 1px 5px 0.5px hsla(55, 47%, 23%, 1);
 }
-  
-/*Changes content width and margins*/
-@media screen and (max-width: 551px) {
-	div.content {
-		width: 86%;
-		margin: 0 7%;
-	}
-	.domain-name {
-		transition: font-size .5s ease;
-	}
-}
-
-@media screen and (max-width: 450px) {
-	.domain-name {
-		font-size: 21px;
-	}
-}
-
-@media screen and (max-width: 386px) {
-	.header {
-		position: relative;
-	}
-	div.content {
-		top: 0px;
-	}
-}
-
-@media screen and (min-width: 1100px) {
-	#app {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		position: relative;
-	}
-	div.paragraph-block {
-		display: flex;
-		width: 47%;
-		margin: 10px;
-		flex-direction: column;
-	}
-}
 
 .domain-info {
 	color: #ffffff;
@@ -130,15 +89,16 @@ ul {
 	position: relative;
 	margin: 0 15%;
 	margin-bottom: 15px;
-	top: 96px;
+	top: 86px;
 	transition: width .5s ease;
 }
 
 .myinfo {
 	text-align: center;
     display: flex;
-    justify-content: space-evenly;
-
+	justify-content: space-evenly;
+    padding: 5px 0;
+	transition: background-color .5s ease, box-shadow .5s ease, margin .5s ease;
 }
 
 .paragraph-block {
@@ -172,8 +132,54 @@ ul {
 	margin-bottom: 10px;
 }
 
-/* Quick styles */
-
 .category-label {
 	font-weight: bold;
+}
+
+
+@media screen and (min-width: 1100px) {
+	#app {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		position: relative;
+	}
+	div.paragraph-block {
+		display: flex;
+		width: 47%;
+		margin: 10px;
+		flex-direction: column;
+	}
+	.myinfo {
+		background-color: rgb(105, 105, 105);
+		box-shadow: 1px 1.5px 1px 0.5px #797979;
+		border-radius: 4px;
+		width: 96.5%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 551px) {
+	div.content {
+		width: 86%;
+		margin: 0 7%;
+	}
+	.domain-name {
+		transition: font-size .5s ease;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.domain-name {
+		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 386px) {
+	.header {
+		position: relative;
+	}
+	div.content {
+		top: 0px;
+	}
 }

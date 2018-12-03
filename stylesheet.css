@@ -175,6 +175,8 @@ ul {
 	}
 }
 
+/* Something is going wrong on mobile here
+
 @media screen and (max-width: 386px) {
 	.header {
 		position: relative;
@@ -183,3 +185,4 @@ ul {
 		top: 0px;
 	}
 }
+*/

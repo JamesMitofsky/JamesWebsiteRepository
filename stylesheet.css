@@ -137,25 +137,25 @@ ul {
 }
 
 
-@media screen and (min-width: 1100px) {
-	#app {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		position: relative;
-	}
-	div.paragraph-block {
-		display: flex;
-		width: 47%;
-		margin: 10px;
-		flex-direction: column;
-	}
+@media screen and (min-width: 1000px) {
 	.myinfo {
 		background-color: rgb(105, 105, 105);
 		box-shadow: 1px 1.5px 1px 0.5px #797979;
 		border-radius: 4px;
-		width: 96.5%;
+		width: 98%;
 		margin: auto;
+	}
+	#app {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		position: relative;
+	}
+	.paragraph-block {
+		display: flex;
+		width: 48%;
+		margin: 1%;
+		flex-direction: column;
 	}
 }
 

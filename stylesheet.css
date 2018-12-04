@@ -88,7 +88,6 @@ ul {
 	width: 70%;
 	position: relative;
 	margin: 0 15%;
-	margin-bottom: 15px;
 	top: 86px;
 	transition: width .5s ease;
 }
@@ -134,6 +133,60 @@ ul {
 
 .category-label {
 	font-weight: bold;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#footer {
+	margin: 20px 0;
+	display: flex;
+    justify-content: space-evenly;
+}
+
+#footer a {
+	padding: 10px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color .3s ease, opacity 2s ease;
+}
+
+#footer #instagram-link:hover {
+	opacity: 0;
+	background-image: linear-gradient(to bottom left, #8f58af, #ffe240);
+}
+
+#footer #instagram-link:hover {
+	opacity: .9;
+	transition: opacity 2s ease;
+}
+
+#footer #twitter-link:hover {
+	background-color: lightblue;
+}
+
+#footer #youtube-link:hover {
+	background-color: lightcoral;
+	z-index: 1;
+}
+
+#footer #youtube-link:hover::before {
+	content: "";
+	padding: 8px;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+}
+
+#footer #github-link:hover {
+	background-color: rgb(255, 173, 140);
+}
+
+#footer #email-link:hover {
+	background-color: rgb(83, 219, 83);
 }
 
 

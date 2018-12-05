@@ -161,6 +161,10 @@ ul {
 	height: 30px;
 }
 
+#footer #twitter-link:hover {
+	background-color: lightblue;
+}
+
 #footer #instagram-background {
 	opacity: 0;
 	height: 50px;
@@ -174,8 +178,12 @@ ul {
 	opacity: .69;
 }
 
-#footer #twitter-link:hover {
-	background-color: lightblue;
+#footer #github-link:hover {
+	background-color: rgb(255, 173, 140);
+}
+
+#footer #email-link:hover {
+	background-color: rgb(161, 212, 161);
 }
 
 #footer #youtube-link:hover {
@@ -183,6 +191,7 @@ ul {
 	z-index: 1;
 }
 
+/* Not sure about the look of this
 #footer #youtube-link:hover::before {
 	content: "";
 	padding: 8px;
@@ -190,14 +199,7 @@ ul {
     position: absolute;
     z-index: -1;
 }
-
-#footer #email-link:hover {
-	background-color: rgb(161, 212, 161);
-}
-
-#footer #github-link:hover {
-	background-color: rgb(255, 173, 140);
-}
+*/
 
 @media screen and (min-width: 1000px) {
 	.myinfo {

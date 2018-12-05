@@ -8,8 +8,9 @@
 	font-family: Verdana, sans-serif;
 	font-size: 100%;
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 p {
@@ -87,10 +88,10 @@ ul {
 
 .content {
 	width: 70%;
-	position: relative;
-	margin: 0 15%;
-	top: 86px;
-	transition: width .5s ease;
+    margin: 0 15%;
+    transition: width .5s ease;
+    flex-grow: 1;
+    margin-top: 88px;
 }
 
 .myinfo {
@@ -136,19 +137,14 @@ ul {
 	font-weight: bold;
 }
 
-#footer a {
-	text-decoration: none;
-}
-
 #footer {
 	margin: 20px 0;
-	display: flex;
-	justify-content: space-evenly;
-	width: 70%;
-    position: relative;
-    top: 86px;
-	margin: 0 auto;
-	margin-bottom:15px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #footer a {
@@ -157,6 +153,7 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-decoration: none;
 	transition: background-color .2s ease;
 }
 
@@ -171,11 +168,10 @@ ul {
 	z-index: -1;
 	border-radius: 50%;
 	transition: opacity .2s ease;
-	filter: opacity(69%);
 }
 
 #footer #instagram-link:hover #instagram-background {
-	opacity: 1;
+	opacity: .69;
 }
 
 #footer #twitter-link:hover {

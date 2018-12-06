@@ -227,6 +227,7 @@ ul {
 	div.content {
 		width: 86%;
 		margin: 0 7%;
+		margin-top: 88px;
 	}
 	.domain-name {
 		transition: font-size .5s ease;

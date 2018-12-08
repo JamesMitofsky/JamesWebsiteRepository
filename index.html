@@ -31,7 +31,7 @@ a visible jump in text. Maybe try to make the font local.-->
         <div id="app">
             <div v-for="proj in projects" class="paragraph-block">
                 <div class="website-name">{{proj.name}}</div>
-                <div class="website-info">
+                <div class="website-info grid-container">
                     <div class="project-type category-block"><span class="category-label">Type: </span>{{proj.type}}</div>
                     <div class="category-block"><span class="category-label">Upload Date: </span>{{proj.uploadDate}}</div>
                     <div class="link-box">
@@ -39,6 +39,7 @@ a visible jump in text. Maybe try to make the font local.-->
                             {{proj.viewSite}}
                         </a>
                     </div>
+                    <iframe :src="proj.projectLink"></iframe>
                     <div class="card-divider"></div>
                     <div class="website-description">
                         <span><span class="category-label">Description: </span>{{proj.description}}</span>

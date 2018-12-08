@@ -104,7 +104,7 @@ ul {
 
 .paragraph-block {
 	background-color: white;
-	margin: 10px 0px;
+	margin: 25px 0px;
 	box-shadow: 1px 1.5px 1px 0.5px #797979;
 	border-radius: 4px;
 }
@@ -114,13 +114,23 @@ ul {
 }
 
 .website-name {
-	background-color: #cceaec;
+	background-color: #305e9a;
+	color: white;
 	padding: 10px;
 	font-weight: bold;
 }
 
 .website-info {
 	padding: 10px;
+}
+
+iframe {
+	width: 200%;
+	transform: scale(.5);
+	transform-origin: left;
+	height: 380px;
+	margin: -68px 0;
+	outline: 3px solid grey;
 }
 
 .card-divider {

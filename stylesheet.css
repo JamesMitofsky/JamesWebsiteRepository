@@ -91,20 +91,21 @@ ul {
     margin: 0 15%;
     transition: width .5s ease;
     flex-grow: 1;
-    margin-top: 100px;
+    margin-top: 78px;
 }
 
 .myinfo {
 	text-align: center;
     display: flex;
 	justify-content: space-evenly;
-    padding: 5px 0;
+	padding: 5px 0;
+	margin: 10px;
 	transition: background-color .5s ease, box-shadow .5s ease, margin .5s ease;
 }
 
 .paragraph-block {
 	background-color: white;
-	margin: 25px 0px;
+	margin-bottom: 25px;
 	box-shadow: 1px 1.5px 1px 0.5px #797979;
 	border-radius: 4px;
 }
@@ -123,7 +124,7 @@ ul {
 .website-info {
 	padding: 10px;
 }
-
+/*
 iframe {
 	width: 200%;
 	transform: scale(.5);
@@ -132,6 +133,26 @@ iframe {
 	margin: -68px 0;
 	outline: 3px solid grey;
 }
+*/
+
+.iframe-container {
+	position: relative;
+    margin: 20px 0;
+    border: 3px solid lightgrey;
+    border-style: groove;
+    padding-top: 45%;
+  }
+  
+  iframe {
+	border: 0;
+	height: 200%;
+	width: 200%;
+    left: 0;
+    position: absolute;
+    top: -50%;
+    transform: scale(.5);
+    transform-origin: left;
+  }
 
 .card-divider {
 	margin: 10px 5px;
@@ -237,7 +258,7 @@ iframe {
 	div.content {
 		width: 86%;
 		margin: 0 7%;
-		margin-top: 88px;
+		margin-top: 78px;
 	}
 	.domain-name {
 		transition: font-size .5s ease;

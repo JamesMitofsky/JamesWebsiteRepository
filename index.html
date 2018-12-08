@@ -39,8 +39,9 @@ a visible jump in text. Maybe try to make the font local.-->
                             {{proj.viewSite}}
                         </a>
                     </div>
-                    <iframe :src="proj.projectLink"></iframe>
-                    <div class="card-divider"></div>
+                    <div class="iframe-container">
+                        <iframe :src="proj.projectLink"></iframe>
+                    </div>
                     <div class="website-description">
                         <span><span class="category-label">Description: </span>{{proj.description}}</span>
                     </div>

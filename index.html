@@ -34,15 +34,15 @@ a visible jump in text. Maybe try to make the font local.-->
                 <div class="website-info">
                     <div class="project-type category-block"><span class="category-label">Type: </span>{{proj.type}}</div>
                     <div class="category-block"><span class="category-label">Upload Date: </span>{{proj.uploadDate}}</div>
-                    <div class="link-box">
+                    <div class="link-box category-block">
                         <a class="website-link category-block category-label" :href="proj.projectLink" target="_blank">
                             {{proj.viewSite}}
                         </a>
                     </div>
-                    <div class="iframe-container">
+                    <div class="iframe-container category-block">
                         <iframe :src="proj.projectLink"></iframe>
                     </div>
-                    <div class="website-description">
+                    <div class="website-description category-block">
                         <span><span class="category-label">Description: </span>{{proj.description}}</span>
                     </div>
                 </div>

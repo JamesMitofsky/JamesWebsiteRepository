@@ -91,7 +91,7 @@ ul {
     margin: 0 15%;
     transition: width .5s ease;
     flex-grow: 1;
-    margin-top: 78px;
+    margin-top: 88px;
 }
 
 .myinfo {
@@ -110,8 +110,12 @@ ul {
 	border-radius: 4px;
 }
 
+.category-label {
+	font-weight: bold;
+}
+
 .category-block {
-	margin: 5px 0;
+	margin: 7px 0;
 }
 
 .website-name {
@@ -137,10 +141,9 @@ iframe {
 
 .iframe-container {
 	position: relative;
-    margin: 20px 0;
     border: 3px solid lightgrey;
     border-style: groove;
-    padding-top: 45%;
+    padding-top: 38%;
   }
   
   iframe {
@@ -154,18 +157,9 @@ iframe {
     transform-origin: left;
   }
 
-.card-divider {
-	margin: 10px 5px;
-	border-bottom: 2px solid rgb(199, 199, 199);
-}
-
 .website-description {
 	font-size: 14px;
 	margin-bottom: 10px;
-}
-
-.category-label {
-	font-weight: bold;
 }
 
 #footer {

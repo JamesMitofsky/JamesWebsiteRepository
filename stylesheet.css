@@ -106,7 +106,7 @@ ul {
 .paragraph-block {
 	background-color: white;
 	margin-bottom: 25px;
-	box-shadow: 1px 1.5px 1px 0.5px #797979;
+	box-shadow: 1px 1px 4px 2px #767676;
 	border-radius: 4px;
 }
 
@@ -143,8 +143,14 @@ iframe {
 	position: relative;
     border: 3px solid lightgrey;
     border-style: groove;
-    padding-top: 38%;
+	padding-top: 38%;
+	opacity: 0.7;
+    transition: opacity .5s ease;
   }
+
+  .paragraph-block:hover .website-info .iframe-container {
+    opacity: 1;
+}
   
   iframe {
 	border: 0;
@@ -242,8 +248,8 @@ iframe {
 	}
 	.paragraph-block {
 		display: flex;
-		width: 48%;
-		margin: 1%;
+		width: calc(48% - 5px);
+		margin: 10px;
 		flex-direction: column;
 	}
 }

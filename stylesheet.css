@@ -91,7 +91,7 @@ ul {
     margin: 0 15%;
     transition: width .5s ease;
     flex-grow: 1;
-    margin-top: 88px;
+	margin-top: 70px;
 }
 
 .myinfo {
@@ -108,14 +108,8 @@ ul {
 	margin-bottom: 25px;
 	box-shadow: 1px 1px 4px 2px #767676;
 	border-radius: 4px;
-}
-
-.category-label {
-	font-weight: bold;
-}
-
-.category-block {
-	margin: 7px 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .website-name {
@@ -125,9 +119,38 @@ ul {
 	font-weight: bold;
 }
 
+.category-label {
+	font-weight: bold;
+}
+
 .website-info {
 	padding: 10px;
 }
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 6px;
+	grid-template-areas:
+		"type link"
+		"upload .";
+}
+
+.project-type {
+	grid-area: type;
+}
+
+.upload {
+	grid-area: upload;
+}
+
+.link-box {
+	grid-area: link;
+	display: flex;
+    justify-content: flex-end;
+    margin-right: 21px;
+}
+
 /*
 iframe {
 	width: 200%;
@@ -145,7 +168,8 @@ iframe {
     border-style: groove;
 	padding-top: 38%;
 	opacity: 0.7;
-    transition: opacity .5s ease;
+	transition: opacity .4s ease;
+	margin: 10px 0;
   }
 
   .paragraph-block:hover .website-info .iframe-container {
@@ -268,6 +292,18 @@ iframe {
 @media screen and (max-width: 450px) {
 	.domain-name {
 		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.grid {
+		display: block;
+	}
+	.link-box {
+		display: block;
+	}
+	.category-block {
+		margin: 6px 0;
 	}
 }
 

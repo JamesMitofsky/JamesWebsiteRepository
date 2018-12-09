@@ -91,7 +91,7 @@ ul {
     margin: 0 15%;
     transition: width .5s ease;
     flex-grow: 1;
-	margin-top: 70px;
+	margin-top: 80px;
 }
 
 .myinfo {
@@ -105,11 +105,12 @@ ul {
 
 .paragraph-block {
 	background-color: white;
-	margin-bottom: 25px;
 	box-shadow: 1px 1px 4px 2px #767676;
 	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
+	margin: 10px;
+	margin-bottom: 25px;
 }
 
 .website-name {
@@ -261,20 +262,16 @@ iframe {
 		background-color: rgb(105, 105, 105);
 		box-shadow: 1px 1.5px 1px 0.5px #797979;
 		border-radius: 4px;
-		width: 98%;
-		margin: auto;
+		width: calc(96% + 10px);
 	}
 	#app {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: left;
-		position: relative;
 	}
 	.paragraph-block {
-		display: flex;
 		width: calc(48% - 5px);
-		margin: 10px;
-		flex-direction: column;
+		
 	}
 }
 
@@ -282,7 +279,6 @@ iframe {
 	div.content {
 		width: 86%;
 		margin: 0 7%;
-		margin-top: 78px;
 	}
 	.domain-name {
 		transition: font-size .5s ease;

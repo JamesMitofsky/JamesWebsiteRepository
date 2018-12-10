@@ -172,6 +172,7 @@ iframe {
 
 .iframe-container {
 	overflow: hidden;
+	height: 190px;
 }
 
 /*

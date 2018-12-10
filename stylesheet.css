@@ -121,6 +121,10 @@ ul {
 	font-weight: bold;
 }
 
+.category-block {
+	margin: 6px 0;
+}
+
 .category-label {
 	font-weight: bold;
 }
@@ -132,7 +136,6 @@ ul {
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 6px;
 	grid-template-areas:
 		"type link"
 		"upload .";
@@ -150,7 +153,6 @@ ul {
 	grid-area: link;
 	display: flex;
     justify-content: flex-end;
-    margin-right: 21px;
 }
 
 .iframe-container {
@@ -304,14 +306,14 @@ iframe {
 	.domain-name {
 		font-size: 21px;
 	}
+}
+
+@media screen and (max-width: 450px) {
 	.grid {
 		display: block;
 	}
 	.link-box {
 		display: block;
-	}
-	.category-block {
-		margin: 6px 0;
 	}
 }
 

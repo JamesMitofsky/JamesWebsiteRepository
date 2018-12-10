@@ -153,13 +153,16 @@ ul {
     margin-right: 21px;
 }
 
+.iframe-container {
+	overflow: hidden;
+	height: 190px;
+}
 
 iframe {
 	width: 200%;
 	transform: scale(.5);
-	transform-origin: left;
+	transform-origin: top left;
 	height: 380px;
-	margin: -68px 0;
 	outline: 3px solid grey;
 	opacity: 0.7;
 	transition: opacity .4s ease;
@@ -168,11 +171,6 @@ iframe {
 
 .paragraph-block:hover .website-info iframe {
 	opacity: 1;
-}
-
-.iframe-container {
-	overflow: hidden;
-	height: 190px;
 }
 
 /*

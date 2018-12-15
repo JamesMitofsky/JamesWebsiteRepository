@@ -42,7 +42,12 @@ a visible jump in text. Maybe try to make the font local.-->
                         </div>
                     </div>
                     <div class="iframe-container category-block">
-                        <iframe :src="proj.projectLink"></iframe>
+                        <a class="iframe-link" :href="proj.projectLink" target="_blank">
+                            <div class="dimming-block">
+                            </div>
+                            <iframe :src="proj.projectLink"></iframe>
+
+                        </a>
                     </div>
                     <div class="website-description category-block">
                         <span><span class="category-label">Description: </span>{{proj.description}}</span>

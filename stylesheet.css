@@ -14,6 +14,10 @@
 	overflow-x: hidden;
 }
 
+i {
+	margin-right: 4px;
+}
+
 p {
 	font-size: .875em;
 }
@@ -56,31 +60,6 @@ ul {
 	justify-content: center;
   }
 
-
-.myinfo-link {
-	display: flex;
-    align-items: center;
-	margin: 0 4px;
-	background-color: rgb(0, 137, 179);
-	color: white;
-	padding: 5px 15px;
-	border-radius: 3px;
-	box-shadow: 1.6px 1.6px 3px 0px hsl(197, 100%, 16%);
-	text-decoration: none;
-	transition: background-color .2s ease, color .2s ease;
-	border: 2px solid transparent;
-}
-
-.myinfo-link:hover {
-	border: 2px solid hsla(-166, 100%, 42%, 1);
-	background-color: rgb(195, 236, 250);
-	color: black;
-}
-
-.myinfo-link:active {
-    box-shadow: inset 1px 1px 5px 0.5px hsla(55, 47%, 23%, 1);
-}
-
 .domain-info {
 	color: #ffffff;
 	text-decoration: none;
@@ -112,6 +91,63 @@ ul {
 	margin: 10px;
 	transition: background-color .4s ease, box-shadow .4s ease, margin-right .4s ease, margin-left .4s ease;
 }
+
+.myinfo-link {
+	display: flex;
+    align-items: center;
+	margin: 0 4px;
+	background-color: rgb(0, 137, 179);
+	color: white;
+	padding: 5px 15px;
+	border-radius: 3px;
+	box-shadow: 1.6px 1.6px 3px 0px hsl(197, 100%, 16%);
+	text-decoration: none;
+	transition: background-color .2s ease, color .2s ease;
+	border: 2px solid transparent;
+}
+
+.myinfo-link:hover {
+	border: 2px solid hsla(-166, 100%, 42%, 1);
+	background-color: rgb(195, 236, 250);
+	color: black;
+}
+
+.myinfo-link:active {
+    box-shadow: inset 1px 1px 5px 0.5px hsla(55, 47%, 23%, 1);
+}
+
+.dropdown-wrapper {
+	position: relative;
+	display: inline-block;
+  }
+
+.dropdown-button {
+	display: flex;
+}
+  
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #fcfcfc;
+min-width: 120px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 4;
+left: -2px;
+margin: 6px 0;
+}
+
+.dropdown-content a {
+color: black;
+padding: 10px 10px;
+text-decoration: none;
+display: block;
+}
+
+a.active {
+background-color:hsl(194, 97%, 62%) !important;
+}
+
+/*begin main content*/
 
 #cards-container {
 	margin-top: 5px;
@@ -205,34 +241,6 @@ iframe {
 	opacity: 0;
 }
 
-/*
-.iframe-container {
-	position: relative;
-    border: 3px solid lightgrey;
-    border-style: groove;
-	padding-top: 38%;
-	opacity: 0.7;
-	transition: opacity .4s ease;
-	margin: 10px 0;
-  }
-
-  .paragraph-block:hover .website-info .iframe-container {
-    opacity: 1;
-}
-  
-  iframe {
-	border: 0;
-	height: 200%;
-	width: 200%;
-    left: 0;
-    position: absolute;
-    top: -50%;
-    transform: scale(.5);
-    transform-origin: left;
-  }
-  
-*/
-
 .website-description {
 	font-size: 14px;
 	margin-bottom: 10px;
@@ -291,16 +299,6 @@ iframe {
 	background-color: rgb(236, 122, 122);
 	z-index: 1;
 }
-
-/* Not sure about the look of this
-#footer #youtube-link:hover::before {
-	content: "";
-	padding: 8px;
-    background-color: white;
-    position: absolute;
-    z-index: -1;
-}
-*/
 
 @media screen and (min-width: 1100px) {
 	.myinfo {
@@ -362,43 +360,10 @@ iframe {
 */
 
 
-.dropdown-wrapper {
-	position: relative;
-	display: inline-block;
-  }
 
-.dropdown-button {
-	display: flex;
-}
-  
-  .dropdown-content {
-	display: none;
-    position: absolute;
-    background-color: #fcfcfc;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 4;
-    left: -2px;
-	margin: 6px 0;
-  }
-  
-  .dropdown-content a {
-	color: black;
-	padding: 10px 10px;
-	text-decoration: none;
-	display: block;
-  }
-
-  a.active {
-	background-color:hsl(194, 97%, 62%) !important;
-  }
 
 .dropdown-content a:hover {background-color: #ddd;}
 
 .dropdown-wrapper:hover .dropdown-content {display: block;}
 
 .dropdown-wrapper:hover .dropbtn {background-color: #3e8e41;}
-
-i {
-	margin-right: 4px;
-}

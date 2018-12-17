@@ -11,6 +11,7 @@ a visible jump in text. Maybe try to make the font local.-->
     <meta name="description" content="This is the repository for all the websites I've made.">
     <link rel="stylesheet" type="text/css" href="stylesheet.css?v=4">
     <link rel="icon" href="resizedJamesFavicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
 </head>
 
@@ -21,15 +22,25 @@ a visible jump in text. Maybe try to make the font local.-->
             <h1 class="domain-name aligner-item">James's Website Repository</h1>
         </a>
     </div>
-    <div class="content">
+    <div class="content" id="app">
         <div class="myinfo">
-            <a class="myinfo-link" href="https://github.com/13rilliant" target="_blank">My
+            <a class="myinfo-link" href="https://github.com/13rilliant" target="_blank"><i class="fab fa-github"></i>My
                 Github Profile</a>
-            <a class="myinfo-link" href="https://13rilliant.github.io/PracticeLog/index.html" target="_blank">Practice
+            <a class="myinfo-link" href="https://13rilliant.github.io/PracticeLog/index.html" target="_blank"><i class="fas fa-file-alt"></i>Practice
                 Log</a>
+            <div class="dropdown-wrapper myinfo-link">
+                <div class="dropdown-button"><i class="fas fa-sort"></i><span>Sort</span></div>
+                <div class="dropdown-content">
+                    <a v-bind:class="{ active: sortBy == 'date' && sortDir == 'desc' }" @click="updateSort('date', 'desc')"
+                        href="#">Newest</a>
+                    <a v-bind:class="{ active: sortBy == 'date' && sortDir == 'asc' }" @click="updateSort('date', 'asc')"
+                        href="#">Oldest</a>
+                    <a v-bind:class="{ active: sortBy == 'name' }" @click="updatedSort('name', 'asc')" href="#">Name</a>
+                </div>
+            </div>
         </div>
-        <div id="app">
-            <div v-for="proj in projects" class="paragraph-block">
+        <div id="cards-container">
+            <div v-for="proj in sortedProjects" class="paragraph-block">
                 <div class="website-name">{{proj.name}}</div>
                 <div class="website-info">
                     <div class="grid">
@@ -74,6 +85,7 @@ a visible jump in text. Maybe try to make the font local.-->
             <img src="iconmonstr-youtube-6.svg" alt="Youtube Link">
         </a>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     <script>
         var app = new Vue({
             el: '#app',
@@ -111,9 +123,34 @@ a visible jump in text. Maybe try to make the font local.-->
                         projectLink: "https://13rilliant.github.io/JamesAttemptsToExplainLinks/index.html",
                         description: "Created this website to help explain how relative linking works in HTML."
                     }
-                ]
+                ],
+                sortBy: 'date',
+                sortDir: 'desc'
+            },
+            computed: {
+                sortedProjects: function () {
+                    if (this.sortBy == 'date') {
+                        var sortedArray = _.sortBy(this.projects, function (myProj) {
+                            return new Date(myProj.uploadDate);
+                        });
+                        if (this.sortDir == 'desc') {
+                            sortedArray.reverse()
+                        }
+                        return sortedArray;
+                    } else {
+                        return _.sortBy(this.projects, this.sortBy);
+                    }
+                }
+            },
+            methods: {
+                updateSort: function (mySort, myDir) {
+
+                    this.sortBy = mySort;
+                    this.sortDir = myDir;
+                }
             }
         })
+
     </script>
 </body>
 

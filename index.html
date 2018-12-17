@@ -35,7 +35,7 @@ a visible jump in text. Maybe try to make the font local.-->
                         href="#">Newest</a>
                     <a v-bind:class="{ active: sortBy == 'date' && sortDir == 'asc' }" @click="updateSort('date', 'asc')"
                         href="#">Oldest</a>
-                    <a v-bind:class="{ active: sortBy == 'name' }" @click="updatedSort('name', 'asc')" href="#">Name</a>
+                    <a v-bind:class="{ active: sortBy == 'name' }" @click="updateSort('name', 'asc')" href="#">Name</a>
                 </div>
             </div>
         </div>

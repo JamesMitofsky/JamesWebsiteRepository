@@ -20,15 +20,17 @@
             <h1 class="domain-name aligner-item">James's Website Portfolio</h1>
         </a>
     </div>
-    <div class="content" id="app">
+    <div class="content" id="app" @click="showSort = false">
         <div class="myinfo">
             <a class="myinfo-link" href="https://github.com/13rilliant" target="_blank"><i class="fab fa-github"></i>My
                 Github Profile</a>
             <a class="myinfo-link" href="https://13rilliant.github.io/PracticeLog/index.html" target="_blank"><i class="fas fa-file-alt"></i>Practice
                 Log</a>
-            <button onclick="sortClick()" class="dropdown-wrapper myinfo-link">
-                <div class="dropdown-button"><i class="fas fa-sort"></i><span>Sort</span></div>
-                <div id="dropdown-content">
+            <button class="dropdown-wrapper myinfo-link" >
+                <div class="dropdown-button" @click.stop="showSort = !showSort">
+                    <i class="fas fa-sort"></i><span>Sort</span>
+                </div>
+                <div id="dropdown-content" v-show="showSort">
                     <a v-bind:class="{ active: sortBy == 'date' && sortDir == 'desc' }" @click="updateSort('date', 'desc')"
                         href="#">Newest</a>
                     <a v-bind:class="{ active: sortBy == 'date' && sortDir == 'asc' }" @click="updateSort('date', 'asc')"
@@ -83,16 +85,6 @@
             <img src="content/iconmonstr-youtube-6.svg" alt="Youtube Link">
         </a>
     </div>
-    <script>
-        function sortClick() {
-        var x = document.getElementById("dropdown-content");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     <script>
         var app = new Vue({
@@ -133,7 +125,8 @@
                     }
                 ],
                 sortBy: 'date',
-                sortDir: 'desc'
+                sortDir: 'desc',
+                showSort: false
             },
             computed: {
                 sortedProjects: function () {

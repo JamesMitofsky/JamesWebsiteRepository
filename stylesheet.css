@@ -366,4 +366,4 @@ iframe {
 
 .dropdown-wrapper:hover .dropdown-content {display: block;}
 
-.dropdown-wrapper:hover .dropbtn {background-color: #3e8e41;}
+.dropdown-wrapper:active .dropdown-content {display: block;}

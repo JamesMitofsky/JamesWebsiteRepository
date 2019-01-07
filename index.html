@@ -26,7 +26,7 @@
                 Github Profile</a>
             <a class="myinfo-link" href="https://13rilliant.github.io/PracticeLog/index.html" target="_blank"><i class="fas fa-file-alt"></i>Practice
                 Log</a>
-            <div class="dropdown-wrapper myinfo-link">
+            <button onclick="myFunction()" class="dropdown-wrapper myinfo-link">
                 <div class="dropdown-button"><i class="fas fa-sort"></i><span>Sort</span></div>
                 <div class="dropdown-content">
                     <a v-bind:class="{ active: sortBy == 'date' && sortDir == 'desc' }" @click="updateSort('date', 'desc')"
@@ -35,7 +35,7 @@
                         href="#">Oldest</a>
                     <a v-bind:class="{ active: sortBy == 'name' }" @click="updateSort('name', 'asc')" href="#">Name</a>
                 </div>
-            </div>
+            </button>
         </div>
         <div id="cards-container">
             <div v-for="proj in sortedProjects" class="paragraph-block">
@@ -83,6 +83,16 @@
             <img src="content/iconmonstr-youtube-6.svg" alt="Youtube Link">
         </a>
     </div>
+    <script>
+        function sortClick() {
+        var x = document.getElementsByClassName("dropdown-content");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     <script>
         var app = new Vue({

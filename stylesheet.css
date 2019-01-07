@@ -367,3 +367,9 @@ iframe {
 .dropdown-wrapper:hover .dropdown-content {display: block;}
 
 .dropdown-wrapper:active .dropdown-content {display: block;}
+
+.myinfo-link:active {
+	border: 2px solid hsla(-166, 100%, 42%, 1);
+	background-color: rgb(195, 236, 250);
+	color: black;
+}

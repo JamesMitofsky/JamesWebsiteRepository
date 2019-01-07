@@ -26,9 +26,9 @@
                 Github Profile</a>
             <a class="myinfo-link" href="https://13rilliant.github.io/PracticeLog/index.html" target="_blank"><i class="fas fa-file-alt"></i>Practice
                 Log</a>
-            <button onclick="myFunction()" class="dropdown-wrapper myinfo-link">
+            <button onclick="sortClick()" class="dropdown-wrapper myinfo-link">
                 <div class="dropdown-button"><i class="fas fa-sort"></i><span>Sort</span></div>
-                <div class="dropdown-content">
+                <div id="dropdown-content">
                     <a v-bind:class="{ active: sortBy == 'date' && sortDir == 'desc' }" @click="updateSort('date', 'desc')"
                         href="#">Newest</a>
                     <a v-bind:class="{ active: sortBy == 'date' && sortDir == 'asc' }" @click="updateSort('date', 'asc')"
@@ -84,16 +84,14 @@
         </a>
     </div>
     <script>
-        /*
         function sortClick() {
-        var x = document.getElementsByClassName("dropdown-content");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
+        var x = document.getElementById("dropdown-content");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
         }
-        }
-        */
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     <script>

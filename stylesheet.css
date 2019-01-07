@@ -126,7 +126,6 @@ ul {
 }
   
 #dropdown-content {
-display: none;
 position: absolute;
 background-color: #fcfcfc;
 min-width: 120px;

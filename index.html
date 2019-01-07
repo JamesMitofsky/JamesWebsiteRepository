@@ -26,9 +26,11 @@
                 Github Profile</a>
             <a class="myinfo-link" href="https://13rilliant.github.io/PracticeLog/index.html" target="_blank"><i class="fas fa-file-alt"></i>Practice
                 Log</a>
-            <button class="dropdown-wrapper myinfo-link" >
-                <div class="dropdown-button" @click.stop="showSort = !showSort">
-                    <i class="fas fa-sort"></i><span>Sort</span>
+            <div class="positional-wrapper">
+                <div class="dropdown-wrapper myinfo-link" @click.stop="showSort = !showSort">
+                    <div class="dropdown-button">
+                        <i class="fas fa-sort"></i><span>Sort</span>
+                    </div>
                 </div>
                 <div id="dropdown-content" v-show="showSort">
                     <a v-bind:class="{ active: sortBy == 'date' && sortDir == 'desc' }" @click="updateSort('date', 'desc')"
@@ -37,7 +39,7 @@
                         href="#">Oldest</a>
                     <a v-bind:class="{ active: sortBy == 'name' }" @click="updateSort('name', 'asc')" href="#">Name</a>
                 </div>
-            </button>
+            </div>
         </div>
         <div id="cards-container">
             <div v-for="proj in sortedProjects" class="paragraph-block">

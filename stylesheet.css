@@ -334,6 +334,12 @@ iframe {
 	}
 }
 
+@media screen and (max-width: 434px) {
+	#dropdown-content {
+		margin: 70px 4px;
+	}
+}
+
 @media screen and (max-width: 551px) {
 	.content {
 		width: 86%;

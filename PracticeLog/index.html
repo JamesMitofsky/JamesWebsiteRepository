@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Practice Log</title>
+    <!--My imported font is lagging behind the load time of the page, causing
+a visible jump in text. Maybe try to make the font local.-->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the repository for all the websites I've made.">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="resizedJamesFavicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+</head>
+
+<body>
+    <div class="header aligner">
+        <a href="index.html" class="domain-info">
+            <h1 class="domain-name aligner-item">Practice Log</h1>
+        </a>
+    </div>
+    </div>
+    <div class="content">
+        <div class="myinfo">
+            <a class="myinfo-link btn" href="https://github.com/13rilliant" target="_blank">My Github Profile</a>
+            <a class="myinfo-link btn" href="https://13rilliant.github.io/JamesWebsiteRepository/index.html" target="_blank">James's
+                Website Repository</a>
+        </div>
+        <!--Begin practice history (listed by most recent)-->
+        <div id="app">
+            <div v-for="proj in projects" class="paragraph-block">
+                <div class="project-name">{{proj.name}}</div>
+                <div class="website-info">
+                    <div class="project-type"><span class="bold">Type: </span>{{proj.type}}</div>
+                    <div><span class="bold">Upload Date: </span>{{proj.uploadDate}}</div>
+                    <div class="link-box">
+                        <template v-for="link in proj.links">
+                            <a class="project-link" :href="link.href" target="_blank">
+                                {{link.text}}</a>&nbsp;
+                        </template>
+                    </div>
+                    <div class="additional-info">
+                        {{proj.description}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                projects: [
+                    {
+                        name: "JavaScript Button",
+                        type: "Professor's Assignment",
+                        uploadDate: "11/22/18",
+                        links: [
+                            { text: "JavaScript Button", href: "PracticeLogProjects/JavaScriptButton/index.html" }
+                        ]
+                    },
+                    {
+                        name: "JavaScript Colors",
+                        type: "Professor's Assignment → Chapter 19",
+                        uploadDate: "11/17/18",
+                        links: [
+                            { text: "JavaScript Colors", href: "PracticeLogProjects/Chapter19-javascript/index.html" }
+                        ]
+                    },
+                    {
+                        name: "Form Filling Fantasia",
+                        type: "Book Assignment → Chapter 9",
+                        uploadDate: "11/3/18",
+                        links: [
+                            { text: "View 9-1", href: "PracticeLogProjects/Chapter9/index.html" },
+                        ]
+                    },
+                    {
+                        name: "Table Madness: a beginning",
+                        type: "Book Assignment → Chapter 8",
+                        uploadDate: "11/1/18",
+                        links: [
+                            { text: "View 8-1", href: "PracticeLogProjects/Chapter8/8-1.html" },
+                            { text: "View 8-2", href: "PracticeLogProjects/Chapter8/8-2.html" },
+                            { text: "View 8-3", href: "PracticeLogProjects/Chapter8/8-3.html" },
+                            { text: "View 8-4", href: "PracticeLogProjects/Chapter8/8-4.html" }
+                        ]
+                    },
+                    {
+                        name: "Transitions with CSS",
+                        type: "Book Assignment → Chapter 17",
+                        uploadDate: "10/28/18",
+                        links: [
+                            { text: "View 17-1", href: "PracticeLogProjects/Chapter17-cssTransitions/17-1/index.html" },
+                            { text: "View 17-2", href: "PracticeLogProjects/Chapter17-cssTransitions/17-2/aquarium.html" }
+                        ]
+                    },
+                    {
+                        name: "Jen's Kitchen",
+                        type: "Book Assignment → Chapter 6",
+                        uploadDate: "10/9/18",
+                        links: [
+                            { text: "Visit Website", href: "PracticeLogProjects/JensKitchen/index.html" }
+                        ]
+                    },
+                    {
+                        name: "Black Goose Bistro",
+                        type: "Book Assignment → Chapter 4",
+                        uploadDate: "9/28/18",
+                        links: [
+                            { text: "Visit Website", href: "PracticeLogProjects/BGB/index.html" }
+                        ]
+                    }
+                ]
+            }
+        })
+    </script>
+</body>
+
+</html>

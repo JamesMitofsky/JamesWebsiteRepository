@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Link 1</title>
+	<style>
+		body {
+			background-color: gray;
+		}
+
+		h1 {
+			margin: 4px;
+		}
+
+		.paragraph {
+			background-color: white;
+			margin: 10px;
+			padding: 10px;
+		}
+		
+		.red {
+			background-color:rgb(190, 86, 86);
+			color: white;
+			padding: 3px 4px;
+			border-radius: 4px;
+		}
+
+		.green {
+			background-color:rgb(86, 190, 100);
+			color: white;
+			padding: 3px 4px;
+			border-radius: 4px;
+		}
+
+		.solution {
+			background-color: #ffdf8f;
+			padding: 2px 7px;
+		}
+
+		.inline {
+			display: inline !important;
+		}
+
+		div.important {
+			background-color: #ffc2d9;
+			margin-bottom: 35px;
+		}
+
+		#header {
+			text-align: center;
+			background-color: #85ceff;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			margin: 10px;
+		}
+
+/*Granted that all these styles are pretty hacky, but the below are really something extra and should probably be
+ignored if you're trying to get something out of reading this code. My goal was to make this code easy to read,
+but in the process I got more interested in improving some of the visual elements on the displayed site.*/
+		@font-face {
+			font-family: 'Menlo';
+			src:
+				url("Menlo-Regular.ttf");
+				format('truetype');
+		}
+
+		pre {
+			font-family: "Menlo";
+			font-size: .7em;
+		}
+
+		a {
+			display: block;
+		}
+
+		span a {
+			display: inline;
+		}
+	</style>
+</head>
+
+<body>
+	<!--Jump to looking at at all the "a" tags with their respective hrefs if you want to explore
+	how the linking works.-->
+	<div id="header">
+		<h1>James Attempts to Explain Relative Linking</h1>
+	</div>
+	<div class="paragraph">
+		<p>There are essentially three parts to this resource:</p>
+		<ol>
+			<li>Reading what I've written on the website</li>
+			<li>Interacting with the links to understand how the user sees them</li>
+			<li>Looking at the pictures I've <span><a href="pictures.html" target="_blank">attached</a></span> which explain folder structure</li>
+		</ol>
+
+		<p>It's important to remember that when linking files you've written for a website together,
+			you are always linking in a relative way. This means that you must format the links in your html to treat the page
+			you're currently focused on as the root of all other pages. If you need to go a folder up, indicate that in your
+			link.
+			If you need to target a file a folder down, indicate that in your link.</p>
+
+		<p>The server doesn't read links the same way your computer does. Your computer can read
+			a link address all the way back from the C drive, since that's the system level world it knows. Similarly, the
+			server only knows about the files
+			you've uploaded. This means that you This is why it's so important to link only based on the folders and files
+			you've uploaded. When editing
+			on your computer, it's best to pretend only the files you're editing with exist, since that's all a server will be
+			able to
+			judge from later.</p>
+	</div>
+	<div class="paragraph">
+		<span><a target="_blank" href="link1.html">Our First Link</a></span><span> </span><span class="green"><em> ← working link</em></span>
+		<!--The below "pre" tag allowed me to display the code without it being read by the browser. You can ignore it
+	if you're reading the code here since it doesn't off-topic from my explaination about relative linking.-->
+		<p>In html, the link looks like this:
+			<pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"link1.html"</span><span style='color:#a65700; '>></span>Our First Link<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span>
+		</pre>
+		</p>
+		<P>This link works because the file it's targeting is located in the same folder as the file (or page) we're
+			currently on.
+			You can see it was written with an href tag that doesn't have any location indicators, only a file name.</p>
+	</div>
+	<div class="paragraph">
+		<a class="inline" target="_blank" href="link2.html">Our Second Link</a><span> </span><span class="red"><em> ← broken link</em></span>
+		<!--The below "pre" tag allowed me to display the code without it being read by the browser. You can ignore it
+	if you're reading the code here since it doesn't off-topic from my explaination about relative linking.-->
+		<p>In html, the link looks like this:
+			<pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"link2.html"</span><span style='color:#a65700; '>></span>Our Second Link<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span>
+		</pre>
+		</p>
+		<p>This link is written just like "Our First Link", but it doesn't work because it fails to indicate that the file
+			we're
+			looking for is in a different folder from the file (page) we're currently on. In this case, "link2.html" is in a
+			folder one below "index.html".</p>
+		<div class="solution">
+			<p>If you want to reach link2.html, you must tell the server to seek one folder down. In this case, the new format
+				of your link
+				inside an anchor ("a") tag would look like:
+				<!--The below "pre" tag allowed me to display the code without it being read by the browser. You can ignore it
+	if you're reading the code here since it doesn't off-topic from my explaination about relative linking.-->
+				<pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"Folder/link2.html"</span><span style='color:#a65700; '>></span>Woot woot send for the loot<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span>
+			</pre>
+		</div>
+		Now, with the above changes in place, this link should take us to link2.html:</p>
+		<span><a target="_blank" href="Folder/link2.html">Our Second Link</a></span><span> </span><span class="green"><em> ← working link</em></span>
+
+	</div>
+	<div class="paragraph important">
+		Follow this working copy of, "<a class="inline" target="_blank" href="Folder/link2.html">Our Second Link</a>" to
+		continue reading about how to target files above the folder you're
+		currently in.
+	</div>
+</body>
+
+</html>

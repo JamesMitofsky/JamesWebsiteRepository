@@ -1,0 +1,156 @@
+/*source of color palette: http://paletton.com/#uid=72l1q0kllllaFw0g0qFqFg0w0aF*/
+
+body {
+	background-color: #7D9F35;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+	font-size: 100%;
+}
+
+p {
+	font-size: .875em;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	color: #d1633c;
+	font-size: 1em;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.header {
+	position: fixed;
+	top:0;
+	padding-bottom: 2px;
+	background-color: #872D62;
+	width: 100%;
+	margin-bottom: 20px;
+	z-index: 100;
+	height: 120px;
+	text-align: center;
+}
+
+.company_info {
+	text-decoration: none;
+	margin: 3px;
+}
+
+.jen_logo {
+	border-radius: 3px;
+	display: inline-block;
+	vertical-align: middle;
+	height: 95px;
+	margin: 5px;
+}
+
+.jen_name {
+	font-family: serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	border-bottom: 1px solid #57b1dc;
+	margin: 5px;
+	font-family: "Marko One", Georgia, serif;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 95px;
+	color: #A7C763;
+}
+
+.nav_button.current_page {
+	background-color: hsla(221, 66%, 40%, 1);
+	color: white;
+	text-decoration: underline;
+}
+
+.nav_menu {
+	display: inline-flex;
+	bottom: -48px;
+	right: -86px;
+	position: relative;
+}
+
+.nav_button {
+    color: purple;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s ease;
+    background-color: hsla(219, 53%, 65%, 1);
+    width: 68px;
+	padding: 14px 0;
+	font-size: .875em;
+}
+
+.nav_button:hover {
+	background-color: #1f98d1; 
+}
+
+a.link_button {
+    display: block;
+	padding: 5px;
+	color: purple;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+    transition: all .3s ease;
+}
+
+.link_button:hover {
+	background-color: hsla(199, 74%, 43%, 1);
+}
+
+.drop_list {
+	position: absolute;
+	margin-top: 14px;
+	background-color: hsla(219, 53%, 65%, 1);
+	display: none;
+	z-index: 1;
+	width: 88px;
+	text-align: left;
+	overflow: hidden;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.recipes:hover .drop_list {
+	display: block;
+}
+
+.content {
+	width: 70%;
+	position: absolute;
+	margin: 0 15%;
+	top: 135px;
+	background-color: #faf2e4;
+	padding: 15px 15px 15px 15px;
+	min-height: 440px;
+}
+
+.page_name {
+	text-align: center;
+}
+
+.paragraph_block{
+	padding: 5px;
+	padding-left: 8px;
+}
+
+.copyright {
+	color: gray;
+	font-size: 12px;
+}
+
+.constructioncontainer {
+	text-align: center;
+}
+
+.underconstruction {
+	width: 60%;
+}

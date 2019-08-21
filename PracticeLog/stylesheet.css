@@ -1,0 +1,169 @@
+/*triad palette: http://paletton.com/#uid=33s0u0kllll9G-pfwrprafhyZ9d
+  tetrad palette: http://paletton.com/#uid=73s0u0klvlr9V-ifPrnrsfhzH9b*/
+
+body {
+	background-color: hsla(0, 0%, 97%, 1);
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+	font-size: 100%;
+	display: flex;
+    justify-content: center;
+}
+
+p {
+	font-size: .875em;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1em;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.header {
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	position: fixed;
+	height: 80px;
+	top: 0;
+	background-color: #383838;
+}
+
+.domain-info {
+	color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.domain-name {
+	font-family: serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0px;
+	font-family: 'IBM Plex Serif', serif;
+	border-bottom: 2px solid #757575;
+}
+
+.myinfo-link {
+	display: inline-block;
+	margin: 0 4px;
+	background-color: hsla(-7, 100%, 35%, 1);
+	color: white;
+	padding: 5px 15px;
+	border-radius: 3px;
+	text-decoration: none;
+	box-shadow: 1.6px 1.6px 3px 0px hsl(0, 90%, 23%);
+	transition: background-color .2s ease, color .2s ease;
+	border: 2px solid transparent;
+}
+
+.myinfo-link:hover {
+	background-color: hsl(353, 100%, 90%);
+	border: 2px solid hsla(-7, 100%, 35%, 1);
+	color: black;
+}
+
+.myinfo-link:active {
+    box-shadow: inset 0.5px 0.5px 5px 0.5px hsl(0, 47%, 23%);
+}
+
+.aligner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+.content {
+	width: 70%;
+	position: relative;
+	top: 86px;
+	margin: 0 15%;
+	margin-bottom: 15px;
+	transition: width .2s ease;
+}
+
+.myinfo {
+	text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    transition: background-color .5s ease, box-shadow .5s ease, margin .5s ease;
+}
+
+.paragraph-block{
+	background-color: white;
+	margin: 10px 0px;
+	box-shadow: 1px 1.5px 1px 0.5px #797979;
+	border-radius: 4px;
+}
+
+.link-box {
+	margin: 5px 0;
+	font-weight: bold;
+}
+
+.project-name {
+	background-color: #eccccc;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.project-link {
+	margin: 0 3px;
+	white-space: nowrap;
+}
+
+.website-info {
+	padding: 10px;
+}
+
+.additional-info {
+	font-size: 14px;
+}
+
+/*Quick-add styles*/
+
+.bold {
+	font-weight: bold;
+}
+
+
+@media screen and (min-width: 1000px) {
+	.myinfo {
+		background-color: rgb(105, 105, 105);
+		box-shadow: 1px 1.5px 1px 0.5px #797979;
+		border-radius: 4px;
+		width: 98%;
+		margin: auto;
+	}
+	#app {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		position: relative;
+	}
+	.paragraph-block {
+		display: flex;
+		width: 48%;
+		margin: 1%;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 564px) {
+	div.content {
+		width: 86%;
+		margin: 0 7%;
+	}
+	.domain-name {
+		transition: font-size .5s ease;
+	}
+}

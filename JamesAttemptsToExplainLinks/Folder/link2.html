@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Link 2</title>
+	<style>
+		body {
+		background-color: gray;
+		}
+		div.james {
+		text-align: center;
+		background-color: #85ceff;
+		}
+		.paragraph {
+		background-color: white;
+		margin: 10px;
+		padding: 10px;
+		}
+		.inline {
+		display: inline !important;
+		}
+		.margin {
+		margin:15px 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="paragraph james">
+		<h1>Link #2 Page</h1>
+	</div>
+	<div class="paragraph">
+		<a href="../index.html">Link to index</a>
+		<div class="margin">
+			<p class="inline">Coded as:</p>
+			<pre class="inline" style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"../index.html"</span><span style='color:#a65700; '>></span>Link to index<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span>
+			</pre>
+		</div>
+	</div>
+	<div class="paragraph">
+		<p>On our Index page, we looked at links which are targeting files beneath the folder which the given file is located in. In understanding that concept,
+		it becomes equally valuable to understand how to link to files above the folder which a given page is currently in.</p>
+	</div>
+	<div class="paragraph">
+		<p>We arrived at this page from "index.html" by targeting this page in a sub-folder from where "index.html" was located. Now that we're on this file, we consider
+		this our current page and target other links in relation to it.</p>
+		<p>To select a folder one level up, use "../" followed by the name of the file you want to reach in that one tier up. An example of this would be: "../made_up_file_name".
+			And if you want to seek up multiple folders, simply repeat this inline. Navigating up four folders would look like this: "../../../../". Now, since we are currently
+			on "link2.html", we need still want to target "link1.html". We achieve this by telling the server the following:</p>
+		<pre class="inline" style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"../index.html"</span><span style='color:#a65700; '>></span>Link to index<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span>
+		</pre>
+		<p>Now the server knows to look one folder higher and then try to find a file called, "index.html".</p>
+	</div>
+
+</body>
+</html>

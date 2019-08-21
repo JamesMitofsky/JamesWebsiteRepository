@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home - Jen's Kitchen</title>
+<!--My imported font is lagging behind the load time of the page, causing
+a visible jump in text. Maybe try to make the font local.-->
+	<link href="http://fonts.googleapis.com/css?family=Marko+One" rel="stylesheet">
+	<meta name="viewport" content="width=100%, initial-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+    <!--I'd like to confine my nav_bar and my website info in one container
+    to ensure that as the width grows, they have a max width to their container.
+    Otherwise they look uncomfortably far apart.-->
+<div class="header">
+    <div class="header_container">
+        <a href="index.html" class="company_info">
+                <img class="jen_logo" src="Images/standinlogo.gif" alt="Jen's Logo">
+                <h1 class="jen_name">Jen's Kitchen</h1>
+        </a>
+        <div class="nav_menu">
+            <a class="nav_button current_page" href="index.html">Home</a>
+            <div class="nav_button recipes noncurrent_page">
+                Recipes
+                <div class="drop_list">
+                        <a class="link_button" href="TapenadeRecipe.html">Tapenade</a>
+                        <a class="link_button" href="Grub.html">Grub</a>
+                        <a class="link_button" href="FriedIceCream.html">Fried Ice Cream</a>
+                </div>
+            </div>
+            <a class="nav_button noncurrent_page" href="About.html">About</a>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <h1 class="page_name">Welcome to Jen's Kitchen</h1>
+    <div class="paragraph_block">
+            People who know me know that I love to cook. I've created
+            this site to share some of my favorite recipes and online
+            food resources. Bon Appetit!
+    </div>
+    <div class="paragraph_block">
+        <h1>From Jen's Cookbook</h1>
+        <ul>
+            <li>Tapenade (Olive Spread)</li>
+            <li>Garlic Salmon</li>
+            <li>Linguine with Clam Sauce</li>
+            <li>Couscous with Peas and Mint</li>
+        </ul>
+    </div>
+    <div class="paragraph_block">
+        <h1>Good Grub Ideas on the Interwebs</h1>
+        <ul>
+            <li>The Food Network</li>
+            <li>Epicurious</li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p>These revisions feel substantial, but Copyright 2006, Jennifer Robbins</p>
+    </div>
+</div>
+</body>
+</html>
